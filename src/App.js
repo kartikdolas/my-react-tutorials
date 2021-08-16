@@ -28,6 +28,11 @@ import HookCounter from './components/HookCounter';
 import HookCounterTwo from './components/HookCounterTwo';
 import HookCounterThree from './components/HookCounterThree';
 import HookCounterFour from './components/HookCounterFour';
+import EffectCounterOne from './components/EffectCounterOne';
+import EffectCounterTwo from './components/EffectCounterTwo';
+import HookMouse from './components/HookMouse';
+import MouseContainer from './components/MouseContainer';
+
 
 
 function App() {
@@ -74,6 +79,13 @@ function App() {
       <HookCounterTwo></HookCounterTwo>
       <HookCounterThree></HookCounterThree>
       <HookCounterFour></HookCounterFour>
+      <h1>UseEffect</h1>
+      <EffectCounterOne></EffectCounterOne>
+      <h1>Conditionally run effects</h1>
+      <EffectCounterTwo></EffectCounterTwo>
+      <h1>Run Effect only once</h1>
+      <HookMouse></HookMouse>
+      <MouseContainer></MouseContainer>
 
 
 
