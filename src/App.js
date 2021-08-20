@@ -32,8 +32,16 @@ import EffectCounterOne from './components/EffectCounterOne';
 import EffectCounterTwo from './components/EffectCounterTwo';
 import HookMouse from './components/HookMouse';
 import MouseContainer from './components/MouseContainer';
+import IntervalHookCounter from './components/IntervalHookCounter';
+import DataFetching from './components/DataFetching';
+import ComponentC from './components/ComponentC';
+import React from 'react';
+import Parent2Component from './components/Parent2Component';
+import CounterUseMemo from './components/CounterUseMemo';
 
 
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 
 function App() {
   return (
@@ -49,13 +57,13 @@ function App() {
       <Message></Message>
       <Counter></Counter>
       {/* <FunctionClick></FunctionClick> */}
-      <EventBind/>
+      <EventBind />
       <ParentComponent></ParentComponent>
       <UserGreeting></UserGreeting>
       <List></List>
       <Stylesheet primary='true' />
       <Inline></Inline>
-      <div className ="App">
+      <div className="App">
         {/* Inline style */}
         <h1 className="error">Error</h1>
         {/* CSS module */}
@@ -86,6 +94,22 @@ function App() {
       <h1>Run Effect only once</h1>
       <HookMouse></HookMouse>
       <MouseContainer></MouseContainer>
+      <h1>UseEffect with incorrect dependency</h1>
+      <IntervalHookCounter></IntervalHookCounter>
+      <h1>Fetching data</h1>
+      <DataFetching></DataFetching>
+      <h1>UseContext Hook</h1>
+
+      <UserContext.Provider value={'Kartik'}>
+        <ChannelContext.Provider value={'ReactJs'}>
+          <ComponentC></ComponentC>
+        </ChannelContext.Provider >
+      </UserContext.Provider>
+
+      <h1>UseCallback Hook</h1>
+      <Parent2Component></Parent2Component>
+      <h1>UseMemo Hook</h1>
+      <CounterUseMemo></CounterUseMemo>
 
 
 
