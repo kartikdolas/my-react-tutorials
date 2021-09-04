@@ -38,6 +38,9 @@ import ComponentC from './components/ComponentC';
 import React from 'react';
 import Parent2Component from './components/Parent2Component';
 import CounterUseMemo from './components/CounterUseMemo';
+import FocusInput from './components/FocusInput';
+import ClassTimer from './components/ClassTimer';
+import HookFunctionalTimer from './components/HookFunctionalTimer';
 
 
 export const UserContext = React.createContext()
@@ -110,6 +113,10 @@ function App() {
       <Parent2Component></Parent2Component>
       <h1>UseMemo Hook</h1>
       <CounterUseMemo></CounterUseMemo>
+      <h1>UseRef Hook</h1>
+      <FocusInput></FocusInput>
+      <ClassTimer></ClassTimer>
+      <HookFunctionalTimer></HookFunctionalTimer>
 
 
 
