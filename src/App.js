@@ -41,6 +41,11 @@ import CounterUseMemo from './components/CounterUseMemo';
 import FocusInput from './components/FocusInput';
 import ClassTimer from './components/ClassTimer';
 import HookFunctionalTimer from './components/HookFunctionalTimer';
+import DocTitleOne from './components/DocTitleOne';
+import DocTitleTwo from './components/DocTitleTwo';
+import CounterOne from './components/CounterOne';
+import CounterTwo from './components/CounterTwo';
+import UserForm from './components/UserForm';
 
 
 export const UserContext = React.createContext()
@@ -117,6 +122,14 @@ function App() {
       <FocusInput></FocusInput>
       <ClassTimer></ClassTimer>
       <HookFunctionalTimer></HookFunctionalTimer>
+      <h1>Custom Hooks</h1>
+      <DocTitleOne></DocTitleOne>
+      <DocTitleTwo></DocTitleTwo>
+      <h1>Counter Custom Hooks</h1>
+      <CounterOne></CounterOne>
+      <CounterTwo></CounterTwo>
+      <h1>Custom Hook UserForm</h1>
+      <UserForm></UserForm>
 
 
 
