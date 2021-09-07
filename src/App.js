@@ -47,6 +47,9 @@ import CounterOne from './components/CounterOne';
 import CounterTwo from './components/CounterTwo';
 import UserForm from './components/UserForm';
 
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
+
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -54,6 +57,15 @@ export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
+      <div>
+        <h2>Welcome to my component</h2>
+        <ul>
+          <li> <Link to="/components/functional">Functional Component</Link></li>
+        </ul>
+        <Switch>
+          <Route path="/components/functional" component={Greet}></Route>
+        </Switch>
+      </div>
       <h1>Components</h1>
       <Greet></Greet>
       <Hello></Hello>
@@ -64,7 +76,7 @@ function App() {
       <h1>States</h1>
       <Message></Message>
       <Counter></Counter>
-      {/* <FunctionClick></FunctionClick> */}
+      <FunctionClick></FunctionClick>
       <EventBind />
       <ParentComponent></ParentComponent>
       <UserGreeting></UserGreeting>
@@ -72,9 +84,9 @@ function App() {
       <Stylesheet primary='true' />
       <Inline></Inline>
       <div className="App">
-        {/* Inline style */}
+        Inline style
         <h1 className="error">Error</h1>
-        {/* CSS module */}
+        CSS module
         <h1 className={styles.success}>Success</h1>
       </div>
       <Form></Form>
@@ -84,7 +96,7 @@ function App() {
       <h1>Table</h1>
       <Table></Table>
       <h1>Pure Component</h1>
-      {/* <Parent1Component></Parent1Component> */}
+      <Parent1Component></Parent1Component>
       <h1>HTTP calls</h1>
       <h3>Get call</h3>
       <PostList></PostList>
